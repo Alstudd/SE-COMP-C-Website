@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=League+Spartan:wght@100;200;300;400;500;600&family=Montserrat&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *,
+::before,
+::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background: #D5C6FF;
+}
+
+.card-container{
+    width: 33.625rem;
+    height: 44.8125rem;
+    border-radius: 3.125rem;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container{
+    position: relative;
+}
+
+img{
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 6.25rem;
+    border: 2px solid #26235C;
+}
+
+.svg{
+    position: absolute;
+    width: 13.23444rem;
+    height: 13.494rem;
+    left: 25px;
+    transform: translateY(-8px);
+}
+
+.name-container h2{
+    width: 17.1875rem;
+    height: 2.875rem;
+    color: #252525;
+    text-align: center;
+    font-size: 2.1875rem;
+    font-weight: 700;
+    font-family: Lato;
+}
+
+.name-container h3{
+    width: 17.1875rem;
+    height: 2.875rem;;
+    color: #26235C;
+    text-align: center;
+    font-family: Lato;
+    font-size: 1.4375rem;
+
+} */
+
+.hello{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
