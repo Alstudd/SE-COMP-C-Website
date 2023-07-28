@@ -7,11 +7,13 @@ import {
   Route
 } from "react-router-dom"
 
-import MainLayout from "./components/MainLayout"
+import MainLayout from "./layouts/MainLayout"
 import Home from "./pages/Home"
 import Students from "./pages/Students"
 import Achievements from "./pages/Achievements"
 import Contact from "./pages/Contact"
+import Thanks from "./pages/Thanks"
+import Opportunities from "./pages/Opportunities"
 
 import "./index.css"
 
@@ -21,6 +23,7 @@ const router = createBrowserRouter(createRoutesFromChildren(
       <Route path="students" element={<Students />} />
       <Route path="achievements" element={<Achievements />} /> 
       <Route path="contact" element={<Contact />} />
+      <Route path="opportunities" element={<Opportunities />} />
     </Route>
 ))
 
