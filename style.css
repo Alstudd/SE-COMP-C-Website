@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.recent-achi::before{
+    content:"";
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+    background-image: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition-duration: 0.4s;
+    z-index: -1;
+}
+
+.recent-achi:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+
+
+
