@@ -1,6 +1,7 @@
 import React from 'react'
 import InfoBoxes from './InfoBoxes'
 import EmailForm from './EmailForm'
+import "../../css/contact.css"
 
 export default function ContactWrapper() {
     return (

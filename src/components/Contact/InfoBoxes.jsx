@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../css/contact.css'
 import { FaPhone, FaClock, FaAddressBook, FaEnvelope } from 'react-icons/fa'
 
 export default function InfoBoxes() {

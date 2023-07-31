@@ -2,7 +2,7 @@ const studentDetails = [
     {
         id: 1,
         rollNo: 1,
-        image: 'avatar.png',
+        image: '/Alston3.png',
         name: 'Avatar',
         designation: 'Class Representative',
         description: 'I am smart and awesome. Just  Hi',
@@ -14,7 +14,7 @@ const studentDetails = [
     {
         id: 2,
         rollNo: 15,
-        image: 'Alston3.png',
+        image: '/Alston3.png',
         name: 'Alston Soares',
         designation: 'Web Developer',
         description: 'I am a Passionate Web Developer. I am a Growing Programmer and a Coding Enthusiast. I love my life and I love coding a lot!',
@@ -26,7 +26,7 @@ const studentDetails = [
     {
         id: 3,
         rollNo: 13,
-        image: 'vikrant3.png',
+        image: '/vikrant3.png',
         name: 'Utkarsh Tiwari',
         designation: 'Class Representative',
         description: 'I am smart and awesome. Just  Hi',
@@ -38,7 +38,7 @@ const studentDetails = [
     {
         id: 4,
         rollNo: 16,
-        image: '1.png',
+        image: '/vishal.png',
         name: 'Alston Soares',
         designation: 'Class Representative',
         description: 'I am smart and awesome. Just  Hi',
@@ -50,7 +50,7 @@ const studentDetails = [
     {
         id: 5,
         rollNo: 2,
-        image: 'avatar.png',
+        image: '/Alston3.png',
         name: 'Avatar',
         designation: 'Class Representative',
         description: 'I am smart and awesome. Just  Hi',

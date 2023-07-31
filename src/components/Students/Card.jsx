@@ -1,8 +1,5 @@
 import React from 'react'
 import Alston3 from '../../assets/Students/Alston3.png'
-import '../../css/contact.css'
-import '../../css/animations.css'
-import studentDetails from '../../data/studentDetails'
 
 export default function Card(props) {
     function handleMouseEnter() {
@@ -23,7 +20,7 @@ export default function Card(props) {
                 <div className="relative pt-6">
                     <div className="students-zoom-in">
                         <figure onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
-                            <img className="w-[7rem] h-[7rem] object-contain rounded-b-[50%]" src={Alston3} alt="" />
+                            <img className="w-[7rem] h-[7rem] object-contain rounded-[50%] " src={props.image} alt="" />
                             <svg className="h-[8rem] w-[8rem] absolute bottom-[-8px] right-[-25px]" width="169" height="225" viewBox="0 0 169 225" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path id="Ellipse" d="M1.54123 17.5866C17.8648 8.14696 36.3545 3.08639 55.2177 2.89552C74.081 2.70465 92.6777 7.38997 109.205 16.4972C125.732 25.6045 139.629 38.8247 149.549 54.8761C159.468 70.9275 165.074 89.2655 165.821 108.112C166.569 126.959 162.434 145.675 153.817 162.445C145.199 179.216 132.393 193.472 116.638 203.832C100.883 214.192 82.7143 220.304 63.8939 221.575C45.0736 222.846 26.2397 219.234 9.21848 211.088" stroke="#F7DF1E" strokeWidth="5" />
                             </svg>

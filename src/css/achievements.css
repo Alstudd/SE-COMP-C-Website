@@ -1,0 +1,60 @@
+.recent-achi::before{
+    content:"";
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+    background-image: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition-duration: 1000ms;
+    z-index: -1;
+}
+
+.recent-achi:hover::before{
+    transform: scaleX(1);
+}
+
+.card::before{
+    content:"";
+    border-radius: 0.75rem;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    background: white;
+    transform-origin: bottom;
+    transition-duration: 500ms;
+    transform: scaleY(0);
+}
+
+.card:hover::before{
+    transform: scaleY(1);
+}
+.detail{
+    opacity: 0;
+}
+.card:hover .detail{
+    opacity: 1;
+    z-index: 6;
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: #000;
+    opacity: 0;
+    z-index: 0;
+    transition-duration: 400ms;
+    border-radius: 0.75rem;
+}
+
+.card:hover::after{
+    opacity: 0.25;
+}

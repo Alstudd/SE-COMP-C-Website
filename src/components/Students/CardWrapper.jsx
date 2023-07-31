@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card'
 import studentDetails from '../../data/studentDetails'
 import '../../css/contact.css'
+import '../../css/animations.css'
 
 function createCard(detail) {
     return <Card
@@ -29,7 +30,7 @@ export default function CardWrapper() {
                     <p>Meet The Students</p>
                 </header>
                 {/* Container  */}
-                <div className="flex flex-wrap gap-12 justify-center items-center pt-10 pb-10">
+                <div className="flex flex-col sm:flex-wrap sm:flex-row gap-12 justify-center items-center pt-10 pb-10">
                     {studentDetails.map(createCard)}
                 </div>
             </section>
