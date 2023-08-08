@@ -14,7 +14,7 @@ export default function Slider() {
             {
                 opportunityDetails.map((card, i) => (
                     <SwiperSlide key={i}>
-                        <div className='opp-card hover:bg-blue-100 hover:scale-[1.025] hover:cursor-pointer flex flex-col items-start gap-[0.6rem] px-[1rem] pb-[1rem] pt-[1.3rem] max-w-max m-auto'>
+                        <div className='opp-card hover:scale-[1.025] hover:cursor-pointer flex flex-col items-start gap-[0.6rem] px-[1rem] pb-[1rem] pt-[1.3rem] max-w-max m-auto'>
                             <a href={card.link} target='_blank'><img className='w-full max-w-[15rem] rounded-[10%]' src={card.imgUrl} alt="cardImg" /></a>
                             <span className='font-bold text-[1.2rem]'>
                                 <span>{card.date}</span>

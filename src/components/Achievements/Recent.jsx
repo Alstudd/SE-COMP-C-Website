@@ -1,63 +1,57 @@
 import React from 'react'
-import "../../css/achievements.css"
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import 'swiper/css'
+import opportunityDetails from '../../data/opportunityDetails'
+import "../../css/animations.css"
+import "../../css/contact.css"
+import { sliderSettings } from '../../data/sliderSettings'
 
 export default function Recent() {
     return (
-        <div className="overflow-x-hidden">
-            <div className="container">
-                <section className="md:max-w-[1200px] md:w-[90%] mx-auto">
-                    <h2 className="text-[25px] md:text-[35px] text-[#26235C] mt-2 font-bold max-w-[1200px] mx-auto ">
-                        Recent Achievements
-                    </h2>
-                    <div className="recent-achi mt-4 lg:w-[95%]  w-[100%] lg:h-[30rem] md:h-[20rem] h-[15rem] mx-auto bg-[url(/logo.jpeg)] bg-cover lg:p-5 text-white rounded-lg border-l-[25px] border-yellow-300 
-                        hover:scale-[1.05] transition-all duration-500 hover:text-yellow-300 flex justify-between items-center gap-3">
-                        <div>
-                            <h3 className="lg:text-3xl p-2 sm:text-2xl text-xl">
-                                Title
-                            </h3>
-                            <p className="p-2 lg:text-[20px] text-[10px]">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo porro incidunt maxime assumenda dolor, quae velit illum quis nulla reprehenderit totam dolore molestiae id expedita rerum vel rem esse sint.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, consectetur at error cumque dignissimos deserunt voluptatem in totam neque placeat dolores architecto vero magni, velit repellendus voluptatibus quaerat quod ab.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum ratione ea voluptate, porro vitae voluptates. Itaque excepturi similique odit fuga fugit optio id harum ad, minima rerum quaerat consequatur.
-                            </p>
+        <div className='relative'>
+        <Swiper {...sliderSettings}>
+            <SliderButtons />
+            {
+                opportunityDetails.map((card, i) => (
+                    <SwiperSlide key={i}>
+                        <div className='opp-card hover:scale-[1.025] hover:cursor-pointer flex flex-col items-start gap-[0.6rem] px-[1rem] pb-[1rem] max-w-max m-auto'>
+                            <a href={card.link} target='_blank'><img className='w-full max-w-[15rem] rounded-[10%]' src={card.imgUrl} alt="cardImg" /></a>
+                            <span className='font-bold text-[1.2rem]'>
+                                <span>{card.date}</span>
+                            </span>
+                            <p className='text-[1.5rem] text-[#012970] font-bold'>{card.title}</p>
+                            <span className='text-[0.9rem] w-[15rem] font-semibold'>{card.desc}</span>
                         </div>
-                    </div>
-                </section>
+                    </SwiperSlide>
+                ))   
+            }
+        </Swiper>
+    </div>
+    )
+}
 
-                <section className="pt-[180px]">
-                    <h2 className="text-[25px] md:text-[35px] text-[#26235C] mt-2 font-bold max-w-[1200px] mx-auto">
-                        Club core members achievements
-                    </h2>
-                    <div className="recent-achi mt-4 container max-w-[1200px] mx-auto bg-[#26235C] p-5 text-[#D5C6FF] rounded-lg border-l-[25px] border-yellow-300 
-                            flex flex-col lg:flex-row justify-between items-center gap-3">
-                        <img src="/logo.jpeg"
-                            className="w-[100%] md:h-[20rem] h-[15rem] bg-cover object-cover rounded-3xl" />
-                            <div>
-                                <h3 className="md:text-3xl p-2 sm:text-2xl text-xl">
-                                    Title
-                                </h3>
-                                <p className="p-2 lg:text-[20px] text-[10px]">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo porro incidunt maxime assumenda dolor, quae velit illum quis nulla reprehenderit totam dolore molestiae id expedita rerum vel rem esse sint.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, consectetur at error cumque dignissimos deserunt voluptatem in totam neque placeat dolores architecto vero magni, velit repellendus voluptatibus quaerat quod ab.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum ratione ea voluptate, porro vitae voluptates. Itaque excepturi similique odit fuga fugit optio id harum ad, minima rerum quaerat consequatur.
-                                </p>
-                            </div>
-                    </div>
-                </section>
-
-                <section className="py-[180px]">
-                    <h2 className="text-[25px] md:text-[35px] text-[#26235C] mt-2 font-bold max-w-[1200px] mx-auto">
-                        Cr's of the year
-                    </h2>
-                    <div className="before:md: card md:w-[500px] md:h-[500px] w-[300px] h-[300px] mx-auto relative rounded-xl">
-                        <img src="/vishal.png" className="w-[100%] h-[100%] object-center object-contain rounded-xl z-[-5]" />
-                            <div className="detail absolute bottom-0 text-center w-[100%] p-6 duration-500">
-                                <h2 className="md:text-[2rem] text-[1rem] font-[400]">Name</h2>
-                                <p className="md:text-[1.5rem] text-[0.75rem] font-[100] text-[#333]">Type of CR</p>
-                            </div>
-                    </div>
-                </section>
-            </div>
+const SliderButtons = () => {
+    const swiper = useSwiper();
+    return (
+        <div className='flex justify-center gap-[1rem] pt-4'>
+            <button className='text-[1.2rem] py-[0.2rem] px-[0.8rem] text-blue-600 border-none rounded-[5px] bg-blue-100 cursor-pointer' onClick={() => swiper.slidePrev()}>❰</button>
+            <button className='text-[1.2rem] py-[0.2rem] px-[0.8rem] text-blue-600 border-none rounded-[5px] bg-blue-100 cursor-pointer' onClick={() => swiper.slideNext()}>❱</button>
         </div>
     )
 }
+
+
+// import "../../css/achievements.css"
+{/* <div className="recent-achi mt-4 lg:w-[95%]  w-[100%] lg:h-[30rem] md:h-[20rem] h-[15rem] mx-auto bg-[url(/logo.jpeg)] bg-cover lg:p-5 text-white rounded-lg border-l-[25px] border-yellow-300 
+                        hover:scale-[1.05] transition-all duration-500 hover:text-yellow-300 flex justify-between items-center gap-3">
+            <div>
+                <h3 className="lg:text-3xl p-2 sm:text-2xl text-xl">
+                    Title
+                </h3>
+                <p className="p-2 lg:text-[20px] text-[10px]">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo porro incidunt maxime assumenda dolor, quae velit illum quis nulla reprehenderit totam dolore molestiae id expedita rerum vel rem esse sint.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, consectetur at error cumque dignissimos deserunt voluptatem in totam neque placeat dolores architecto vero magni, velit repellendus voluptatibus quaerat quod ab.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum ratione ea voluptate, porro vitae voluptates. Itaque excepturi similique odit fuga fugit optio id harum ad, minima rerum quaerat consequatur.
+                </p>
+            </div>
+        </div> */}

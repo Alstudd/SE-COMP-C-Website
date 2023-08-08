@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Alston3 from '../../assets/Students/Alston3.png'
+import close from "../../assets/Navbar/close.svg";
+import '../../css/animations.css'
 
 export default function Card(props) {
+    const [popup, setPopup] = useState(false);
     function handleMouseEnter() {
         document.querySelectorAll('.my-card')[props.id - 1].classList.add('profileHover');
     }
@@ -9,10 +12,40 @@ export default function Card(props) {
         document.querySelectorAll('.my-card')[props.id - 1].classList.remove('profileHover');
     }
 
+    const handlePopupClick = () => {
+        setPopup(!popup);
+    }
+
     return (
         <div>
             {/* Card Container  */}
-            <div className="z-10 h-[25rem] w-[20rem] bg-white relative flex flex-col justify-center items-center rounded-[3.125rem]">
+            <div className="m-6 z-10 h-[28rem] w-[20rem] bg-white relative flex flex-col justify-center items-center rounded-[3.125rem]" data-sCard>
+                {
+                    popup &&
+                    <div className="z-20 h-full w-full bg-white absolute top-0 left-0 rounded-t-[3.125rem] rounded-b-[20px] border-b-[20px] border-b-[#012970]">
+                        <div className='flex justify-between pt-3 pb-2 bg-[#012970] rounded-t-[3.125rem]'>
+                            <img className='bg-white w-[50px] h-[50px] object-contain rounded-[50%] mt-1 ml-4' src={props.image} alt='profile' />
+                            <h1 className='text-2xl text-white font-bold pt-4'>Achievements</h1>
+                            <div className="zoom-in">
+                                <figure>
+                                    <img onClick={handlePopupClick} className='bg-white rounded-[50%] mr-4 cursor-pointer my-3' width={35} height={35} src={close} alt="" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <ul className='relative bg-white'>
+                                {props.sAchievements.map((element, i) => {
+                                    return <li className='h-18 flex gap-4 items-center liAnimate hover:bg-blue-300 list-none p-[10px] w-full bg-white'>
+                                    <span className="bg-[#012970] relative p-3 text-white inline-block rounded-[50%] text-[12px] font-bold spanAnimate">
+                                        <span className="absolute top-[2px] left-[9px]">{i+1}</span>
+                                    </span>
+                                    {element}
+                                </li>
+                                })}
+                            </ul>
+                        </div>
+                    </div>
+                }
                 <div className='card-elements flex items-center justify-center absolute top-5 left-5 w-7 h-6 rounded-[50%] border-[1px] border-blue-500 bg-[#26235C]'>
                     <span className='text-white'>{props.rollNo}</span>
                 </div>
@@ -30,7 +63,7 @@ export default function Card(props) {
                 </div>
                 {/* Name and Profession Container  */}
                 <div className="card-elements pt-3 text-center">
-                    <h2 className="w-[12rem] h-[1..75rem] text-[1.25rem]">{props.name}</h2>
+                    <h2 id="studentName" className="w-[12rem] h-[1..75rem] text-[1.25rem]" data-name>{props.name}</h2>
                     <h3 className="text-[0.75rem] text-[#26235C]">{props.designation}</h3>
                 </div>
                 {/* Description, Button and Links Container  */}
@@ -40,36 +73,28 @@ export default function Card(props) {
                         {props.description}
                     </p>
                     {/* Button  */}
-                    <button className="w-[9rem] h-[1.85rem] rounded-[0.625rem] bg-[#26235C] text-white font-[400] text-[0.85rem] text-center hover:font-bold hover:scale-[1.1] transition-all duration-300">
+                    <button onClick={handlePopupClick} className="w-[9rem] h-[1.85rem] rounded-[0.625rem] bg-[#26235C] text-white font-[400] text-[0.85rem] text-center hover:font-bold hover:scale-[1.1] transition-all duration-300">
                         Know More
                     </button>
                     {/* Links Container  */}
-                    <div className="w-[12rem] flex justify-between items-center pb-12">
+                    <div className="w-[12rem] flex justify-center gap-10 items-center pb-12">
                         <div className="zoom-in">
                             <figure>
-
-                                <a href={props.twitter}>
-                                    <i className="fa-brands fa-twitter twitter-icon text-[1.25rem] text-[#26235C] hover:text-blue-500"></i>
-                                </a>
-                            </figure>
-                        </div>
-                        <div className="zoom-in">
-                            <figure>
-                                <a href={props.instagram}>
+                                <a href={props.instagram} target="_blank">
                                     <i className="fa-brands fa-instagram insta-icon text-[1.25rem] text-[#26235C] hover:text-blue-500"></i>
                                 </a>
                             </figure>
                         </div>
                         <div className="zoom-in">
                             <figure>
-                                <a href={props.linkedin}>
+                                <a href={props.linkedin} target="_blank">
                                     <i className="fa-brands fa-linkedin linkedin-icon text-[1.25rem] text-[#26235C] hover:text-blue-500"></i>
                                 </a>
                             </figure>
                         </div>
                         <div className="zoom-in">
                             <figure>
-                                <a href={props.github}>
+                                <a href={props.github} target="_blank">
                                     <i className="fa-brands fa-github github-icon text-[1.25rem] text-[#26235C] hover:text-blue-500"></i>
                                 </a>
                             </figure>

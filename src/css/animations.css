@@ -62,3 +62,27 @@ h6 div span {
 .opp-card {
     transition: all 300ms ease-in;
 }
+
+
+.liAnimate {
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+}
+
+.liAnimate:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+.spanAnimate {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.liAnimate:hover .spanAnimate {
+    background: white;
+    color: black;
+}

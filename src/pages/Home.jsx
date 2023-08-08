@@ -10,11 +10,11 @@ import { FaSmile, FaBook, FaBookReader, FaCode } from 'react-icons/fa';
 
 export default function Home() {
   const slides = [
-    { image: CompC, title: "Hotel" },
-    { image: CompCBoys, title: "Beach" },
-    { image: CompC, title: "Forest" },
-    { image: CompCBoys, title: "City" },
-    { image: CompC, title: "India" }
+    { image: CompC},
+    { image: CompCBoys},
+    { image: CompC},
+    { image: CompCBoys},
+    { image: CompC}
   ];
   const containerStyles = {
     // width: '500px',

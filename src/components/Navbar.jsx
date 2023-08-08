@@ -8,7 +8,7 @@ export default function Navbar() {
   const [toggle, setToggle] = useState(false)
   const handleClick = () => setToggle(!toggle)
   return (
-    <div className="z-20 w-full h-[80px] bg-white drop-shadow-lg relative">
+    <div className="z-30 w-full h-[80px] bg-white drop-shadow-lg relative">
       <div className="flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto">
         <div className="flex items-center">
           <img src={logoWhite} alt="logo" className="ml-10 md:ml-3 rounded-lg w-full h-16" />
