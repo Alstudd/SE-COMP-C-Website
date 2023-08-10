@@ -21,7 +21,7 @@ const data = [
     },
     {
         name: "Utkarsh Tiwari",
-        image: "/vishal.png"
+        image: "https://i.imgur.com/WGY1QZU.png"
     }
 ];
 

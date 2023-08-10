@@ -12,8 +12,8 @@ import Home from "./pages/Home"
 import Students from "./pages/Students"
 import Achievements from "./pages/Achievements"
 import Contact from "./pages/Contact"
-import Thanks from "./pages/Thanks"
 import Opportunities from "./pages/Opportunities"
+import Resources from "./pages/Resources"
 
 import "./index.css"
 
@@ -24,6 +24,7 @@ const router = createBrowserRouter(createRoutesFromChildren(
       <Route path="achievements" element={<Achievements />} /> 
       <Route path="contact" element={<Contact />} />
       <Route path="opportunities" element={<Opportunities />} />
+      <Route path="resources" element={<Resources />} />
     </Route>
 ))
 

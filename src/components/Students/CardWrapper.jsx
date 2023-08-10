@@ -18,7 +18,8 @@ function createCard(detail, i) {
         instagram={detail.instagram}
         linkedin={detail.linkedin}
         github={detail.github}
-        sAchievements = {detail.sAchievements}
+        sAchievements={detail.sAchievements}
+        imgCover={detail.imgCover}
     />;
 }
 

@@ -5,16 +5,22 @@ import Counts from '../components/Home/Counts';
 import VisitCount from '../components/Home/VisitCount';
 import OurServices from '../components/Home/OurServices';
 import CompC from "../assets/Home/CompC.jpg";
+import CompCGirls from "../assets/Home/CompCGirls.jpg";
 import CompCBoys from "../assets/Home/CompCBoys.png";
+import groupPic from "../assets/Home/groupPic.jpg";
+import purvaKhushi from "../assets/Home/purvaKhushi.jpg";
+import APIday from "../assets/Home/APIday.jpeg";
+import MulticonPythonFirst from "../assets/Home/MulticonPythonFirst.jpeg";
 import { FaSmile, FaBook, FaBookReader, FaCode } from 'react-icons/fa';
 
 export default function Home() {
   const slides = [
     { image: CompC},
+    { image: CompCGirls},
     { image: CompCBoys},
-    { image: CompC},
-    { image: CompCBoys},
-    { image: CompC}
+    { image: groupPic},
+    { image: purvaKhushi},
+    { image: APIday}
   ];
   const containerStyles = {
     // width: '500px',
@@ -26,7 +32,8 @@ export default function Home() {
   const countCards =  [
     { image: <FaBook className='m-auto w-10 h-10 text-blue-500' />, number: 6, title: "Sem-1 10 pointers"},
     { image: <FaCode className='m-auto w-10 h-10 text-blue-500' />, number: 7, title: "Open Source Contributors"},
-    { image: <FaBookReader className='m-auto w-10 h-10 text-blue-500' />, number: 2, title: "Sem-2 10 pointers"}
+    { image: <FaBookReader className='m-auto w-10 h-10 text-blue-500' />, number: 2, title: "Sem-2 10 pointers"},
+    { image: <FaSmile className='m-auto w-10 h-10 text-blue-500' />, number: 63, title: "COMP-C Students"}
   ]
   return (
     <div>
@@ -44,7 +51,7 @@ export default function Home() {
           title={card.title}
           />;
         })}
-        <VisitCount />
+        {/* <VisitCount /> */}
       </div>
     </div>
   );

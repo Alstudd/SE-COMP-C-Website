@@ -31,7 +31,7 @@ const studentDetails = [
     {
         rollNo: 3,
         image: 'https://i.imgur.com/apaxQ62.png',
-        name: 'Dipti Rabindra Singh',
+        name: 'Dipti Singh',
         designation: 'SE COMPS Student',
         description: "I am a passionate and aspiring individual with a good background in Java and web development. I have passion for creating innovative and user-friendly digital experiences.",
         linkedin: 'https://www.linkedin.com/in/dipti-singh-3a7561263',
@@ -56,7 +56,7 @@ const studentDetails = [
     {
         rollNo: 6,
         image: 'https://i.imgur.com/3vrifH4.png',
-        name: 'Raj Vibhuti Singh',
+        name: 'Raj Singh',
         designation: 'Data Analyst',
         description: "I am a helpful nature person who helps people in need. I am a python learner and have a 4 ⭐ on HackerRank in python. I want to become a data analyst as python is my favourite.",
         instagram: 'https://instagram.com/rajsingh00_?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D',
@@ -134,12 +134,13 @@ const studentDetails = [
             "Clubs: TCET Open Source (Backend Developer), TEDxTCET",
             "I got in an engineering college",
             "F.E. Pointers: 7.83, 8.56"
-        ]
+        ],
+        imgCover: true
     },
     {
         rollNo: 13,
         image: 'https://i.imgur.com/dDSwmdW.png',
-        name: 'Vikrant Sharad Singh',
+        name: 'Vikrant Singh',
         designation: 'SE COMPS Student',
         description: "Self paced learner",
         instagram: 'https://instagram.com/__its_vikrant__?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D',
@@ -181,7 +182,7 @@ const studentDetails = [
     },
     {
         rollNo: 16,
-        image: 'https://i.imgur.com/GZMOJge.png',
+        image: 'https://i.imgur.com/sTlH6KY.png',
         name: 'Devang Sonawane',
         designation: 'SE COMPS Student',
         description: "Hey Devang Here, A hardcore Spiritualist and the guy you would like to hang around if are interested in the same.",
@@ -224,7 +225,7 @@ const studentDetails = [
         image: 'https://i.imgur.com/Q4vXW2S.png',
         name: 'Tanmoy Barua',
         designation: 'SE COMPS Student',
-        description: "I am a pretty average kid who has a decent scope in studies. I really don't take too much mental stress on all these things. I like spending time watching anime, web series and just relaxing in general. I have just a single hobby- gym. Other than that I am not all that passionate about the things that go on around me. It is what it is  ",
+        description: "I am a pretty average kid who has a decent scope in studies. I really don't take too much mental stress on all these things. I like spending time watching anime, web series and just relaxing in general. I have just a single hobby- gym.",
         instagram: 'https://instagram.com/tanmoyywho?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D',
         sAchievements: [
             "F.E. Pointers: 9.65, 9.31"
@@ -245,8 +246,8 @@ const studentDetails = [
     },
     {
         rollNo: 21,
-        image: 'https://i.imgur.com/nIKyJOC.png',
-        name: 'Suraj Vijay Thakur',
+        image: 'https://i.imgur.com/YbyKFZf.jpg',
+        name: 'Suraj Thakur',
         designation: 'SE COMPS Student',
         description: "I am an emerging Computer Engineer.",
         instagram: 'https://instagram.com/_suraj_thakur_21_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D',
@@ -255,7 +256,8 @@ const studentDetails = [
         sAchievements: [
             "Clubs: ISTE",
             "F.E. Pointers: 9.61, 9.54"
-        ]
+        ],
+        imgCover: true
     },
     {
         rollNo: 22,
@@ -287,9 +289,9 @@ const studentDetails = [
     },
     {
         rollNo: 24,
-        image: 'https://i.imgur.com/jmmUnwW.png',
-        name: 'Aditya Vinay Tiwari',
-        designation: 'Aspiring Cricketer',
+        image: 'https://i.imgur.com/F9jGvAY.jpg',
+        name: 'Aditya Tiwari',
+        designation: 'Cricketer',
         description: "I know pretty decent coding skills and I love to play cricket",
         instagram: 'https://instagram.com/_adity4_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D',
         linkedin: 'https://www.linkedin.com/in/aditya-tiwari-471289250',
@@ -334,14 +336,12 @@ const studentDetails = [
         image: 'https://i.imgur.com/qsxCikM.png',
         name: 'Manjesh Tiwari',
         designation: 'SE COMPS Student',
-        description: "I am the Academic CR of COMP C. I am an aspiring Full Stack Web Developer. I completed my SSC from St. Joseph's School with 93.60%. I secured 87.83% in HSC. I am a very passionate and disciplined girl. I am a passionate cook and baker.",
+        description: "I am Manjesh Tiwari studying BE in computer science at TCET Kandivali. I'm very passionate about leaning new things. I'm always open to learn something new and interesting",
         instagram: 'https://instagram.com/manjesh_501?igshid=NTc4MTIwNjQ2YQ==',
         linkedin: 'https://www.linkedin.com/in/manjesh-tiwari-06771a250',
         github: 'https://github.com/Manjesh501',
         sAchievements: [
             "Clubs: Rotract Club Of TCET",
-            "Secured 1st position in Python Workshop Of Multicon",
-            "Received multiple awards for Creative Writing",
             "F.E. Pointers: 8.65, 9.81"
         ]
     },
@@ -374,7 +374,7 @@ const studentDetails = [
     },
     {
         rollNo: 31,
-        image: 'https://i.imgur.com/evKM9SE.png',
+        image: 'https://i.imgur.com/WGY1QZU.png',
         name: 'Utkarsh Tiwari',
         designation: 'SE COMPS Student',
         description: "My journey began with an insatiable curiosity about how computers work and a drive to create innovative solutions. From programming complex algorithms to designing hardware systems, I thrive on challenges that push the boundaries of technology.",
@@ -416,7 +416,7 @@ const studentDetails = [
     {
         rollNo: 34,
         image: 'https://i.imgur.com/sgS3IGO.png',
-        name: 'Jeet Vinay Trivedi',
+        name: 'Jeet Trivedi',
         designation: 'SE COMPS Student',
         description: "I am interested in Competitve programming and like playing carrom and badminton.",
         sAchievements: [
@@ -523,7 +523,7 @@ const studentDetails = [
     },
     {
         rollNo: 44,
-        image: 'https://i.imgur.com/sp42thq.png',
+        image: 'https://i.imgur.com/sw2xxbk.png',
         name: 'Abhay Wadkar',
         designation: 'SE COMPS Student',
         description: "I am a cuber (skilled puzzle solver) always seeking new experiences and challenges.",
@@ -573,7 +573,8 @@ const studentDetails = [
         sAchievements: [
             "Clubs: NSS",
             "F.E. Pointers: 7, 8"
-        ]
+        ],
+        imgCover: true
     },
     {
         rollNo: 51,
@@ -588,9 +589,20 @@ const studentDetails = [
         ]
     },
     {
+        rollNo: 52,
+        image: 'https://i.imgur.com/d7gk9ZN.png',
+        name: 'Kaushal Yadav',
+        designation: 'SE COMPS Student',
+        description: "I am a quick learner and tech enthusiast. I am dedicated towards my work and have keen interest in the various technological trends. 'Mere do chaar khwaab hai jinhe mein aasma se door chahta hu ,zindigi bhale bhi gumnaam ho par maut mein mashoor chahta hu'",
+        sAchievements: [
+            "Clubs: ISTE",
+            "F.E. Pointers: 9.65, 9.42"
+        ]
+    },
+    {
         rollNo: 53,
         image: 'https://i.imgur.com/s0U3x7N.png',
-        name: 'Krutik Singh Yadav',
+        name: 'Krutiksingh Yadav',
         designation: 'SE COMPS Student',
         description: "I am aiming to be a good software engineer in a company and live a happy and prosperous life in the future. A positive point about me is that if I want to achieve something I will try my best to achieve that thing without even thinking about the result",
         instagram: 'https://instagram.com/krutiksingh_yadav?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D',
@@ -662,7 +674,8 @@ const studentDetails = [
     },
     {
         rollNo: 63,
-        image: 'https://i.imgur.com/mAmXtn1.png',
+        image: '/avatar.png',
+        // https://i.imgur.com/mAmXtn1.png
         name: 'Vishal Yadav',
         designation: 'SE COMPS Student',
         description: "Just a person trying to do something meaningful.",

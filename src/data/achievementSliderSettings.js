@@ -1,4 +1,4 @@
-export const scholarSliderSettings = {
+export const sliderSettings = {
     slidesPerView: 1,
     breakpoints: {
         480: {

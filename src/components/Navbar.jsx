@@ -20,7 +20,7 @@ export default function Navbar() {
             <div className="zoom-in"><figure><li><a href="/achievements">Achievements</a></li></figure></div>
             <div className="zoom-in"><figure><li><a href="/students">Students</a></li></figure></div>
             <div className="zoom-in"><figure><li><a href="/opportunities">Opportunities</a></li></figure></div>
-            <div className="zoom-in"><figure><li><a href="#">Resources</a></li></figure></div>
+            <div className="zoom-in"><figure><li><a href="/resources">Resources</a></li></figure></div>
           </ul>
         </div>
         <div className="hidden md:flex sm:mr-10 md:mr-10">
@@ -36,7 +36,7 @@ export default function Navbar() {
         <li className="ml-2"><a href="/achievements">Achievements</a></li>
         <li className="ml-2"><a href="/students">Students</a></li>
         <li className="ml-2"><a href="/opportunities">Opportunities</a></li>
-        <li className="ml-2"><a href="#">Resources</a></li>
+        <li className="ml-2"><a href="/resources">Resources</a></li>
         <div className="flex flex-col my-4">
           {/* <a href="#"><button className="w-full border-2 border-solid rounded-lg border-blue-500 bg-transparent text-black mb-4 py-3 px-8">Resources</button></a> */}
           <a href="/contact"><button className="w-full bg-blue-500 hover:bg-transparent hover:text-black hover:border-2 hover:border-solid hover:border-blue-500 rounded-lg text-white px-8 py-3">Contact Us</button></a>

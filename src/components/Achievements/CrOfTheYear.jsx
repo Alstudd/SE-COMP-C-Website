@@ -2,22 +2,28 @@ import React from 'react'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
 import CrOfTheYearDetails from '../../data/CrOfTheYearDetails'
-import { sliderSettings } from '../../data/sliderSettings'
+import { clubCoreMemberSliderSettings } from '../../data/clubCoreMemberSliderSettings'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 
 export default function CrOfTheYear() {
     return (
         <div className='relative'>
-            <Swiper {...sliderSettings}>
+            <Swiper {...clubCoreMemberSliderSettings}>
                 <SliderButtons />
                 {
                     CrOfTheYearDetails.map((card, i) => (
                         <SwiperSlide key={i}>
-                            <div className="before:md: card mt-10 w-[250px] h-[250px] mx-auto relative rounded-[50%] hover:rounded-xl bg-yellow-300">
-                                <img src={card.image} className="w-[100%] h-[100%] object-center object-contain rounded-[50%] z-[-5]" />
-                                <div className="detail absolute bottom-0 text-center w-[100%] px-6 pt-6 pb-3 duration-500">
-                                    <h2 className="text-[1rem] font-[400]">{card.name}</h2>
-                                    <p className="text-[0.75rem] font-[100] text-[#333]">{card.type}</p>
+                            <div className="ss:w-[600px] xs:w-[400px] w-[350px] mt-10 mx-auto bg-[#26235C] p-5 text-blue-300 rounded-lg border-l-[25px] border-yellow-300 
+                        flex items-center gap-3">
+                                <img src={card.image}
+                                    className="ss:w-[250px] w-[100px] h-[150px] ss:h-[250px] object-contain rounded-lg border-2 border-solid border-white bg-yellow-300" />
+                                <div>
+                                    <h3 className="p-2 xs:text-3xl text-2xl font-bold">
+                                        {card.name}
+                                    </h3>
+                                    <p className="p-2 xs:text-[20px] text-[15px]">
+                                        {card.type}
+                                    </p>
                                 </div>
                             </div>
                         </SwiperSlide>

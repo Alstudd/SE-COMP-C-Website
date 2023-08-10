@@ -1,32 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
-import opportunityDetails from '../../data/opportunityDetails'
+import achievementDetails from '../../data/achievementDetails'
 import "../../css/animations.css"
 import "../../css/contact.css"
-import { sliderSettings } from '../../data/sliderSettings'
+import { sliderSettings } from '../../data/achievementSliderSettings'
+import AchievementPopup from './AchievementPopup'
 
 export default function Recent() {
+    
     return (
         <div className='relative'>
-        <Swiper {...sliderSettings}>
-            <SliderButtons />
-            {
-                opportunityDetails.map((card, i) => (
-                    <SwiperSlide key={i}>
-                        <div className='opp-card hover:scale-[1.025] hover:cursor-pointer flex flex-col items-start gap-[0.6rem] px-[1rem] pb-[1rem] max-w-max m-auto'>
-                            <a href={card.link} target='_blank'><img className='w-full max-w-[15rem] rounded-[10%]' src={card.imgUrl} alt="cardImg" /></a>
-                            <span className='font-bold text-[1.2rem]'>
-                                <span>{card.date}</span>
-                            </span>
-                            <p className='text-[1.5rem] text-[#012970] font-bold'>{card.title}</p>
-                            <span className='text-[0.9rem] w-[15rem] font-semibold'>{card.desc}</span>
-                        </div>
-                    </SwiperSlide>
-                ))   
-            }
-        </Swiper>
-    </div>
+            <Swiper {...sliderSettings}>
+                <SliderButtons />
+                {
+                    achievementDetails.map((card, i) => (
+                        <SwiperSlide key={i}>
+                            
+                            <div className='opp-card hover:scale-[1.025] hover:cursor-pointer flex gap-[0.6rem] flex-col justify-center items-center px-[1rem] pb-[1rem] m-auto'>
+                                <AchievementPopup names={card.names} imgUrl={card.imgUrl} />
+                                <a href={card.link} target='_blank'><img className='w-[38rem] h-[25rem] rounded-[5%]' src={card.imgUrl} alt="cardImg" /></a>
+                                <p className='text-[1.5rem] text-[#012970] font-bold'>{card.title}</p>
+                                <span className='font-bold text-[1.2rem]'>
+                                    <span>{card.desc}</span>
+                                </span>
+                                {/* <span className='text-[0.9rem] w-[15rem] font-semibold'>{card.names}</span> */}
+                            </div>
+                        </SwiperSlide>
+                    ))
+                }
+            </Swiper>
+        </div>
     )
 }
 

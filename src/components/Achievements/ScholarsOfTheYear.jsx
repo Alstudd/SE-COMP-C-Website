@@ -2,21 +2,22 @@ import React from 'react'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
 import ScholarsOfTheYearDetails from '../../data/ScholarsOfTheYearDetails'
-import { scholarSliderSettings } from '../../data/scholarSliderSettings'
+import { sliderSettings } from '../../data/sliderSettings'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 
 export default function ScholarsOfTheYear() {
     return (
         <div className='relative'>
-            <Swiper {...scholarSliderSettings}>
+            <Swiper {...sliderSettings}>
                 <SliderButtons />
                 {
                     ScholarsOfTheYearDetails.map((card, i) => (
                         <SwiperSlide key={i}>
-                            <div className="before:md: card md:w-[500px] md:h-[500px] w-[300px] h-[300px] mx-auto relative rounded-[50%] hover:rounded-xl bg-yellow-300">
+                            <div className="before:md: card mt-10 w-[250px] h-[250px] mx-auto relative rounded-[50%] hover:rounded-xl bg-yellow-300">
                                 <img src={card.image} className="w-[100%] h-[100%] object-center object-contain rounded-[50%] z-[-5]" />
-                                <div className="detail absolute bottom-0 text-center w-[100%] md:my-10 mx-auto my-4 duration-500">
-                                    <h2 className="text-[2rem] font-bold">{card.name}</h2>
+                                <div className="detail absolute bottom-0 text-center w-[100%] pb-4 duration-500">
+                                    <h2 className="text-[1.2rem] font-semibold">{card.name}</h2>
+                                    {/* <p className="text-[0.75rem] font-[100] text-[#333]">{card.type}</p> */}
                                 </div>
                             </div>
                         </SwiperSlide>
