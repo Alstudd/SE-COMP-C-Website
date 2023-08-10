@@ -662,7 +662,7 @@ const studentDetails = [
     {
         rollNo: 62,
         image: 'https://i.imgur.com/GPNyHwB.png',
-        name: 'Vishal Rajnarayan Yadav',
+        name: 'Vishal R Yadav',
         designation: 'SE COMPS Student',
         description: "My name is Vishal Yadav a second year computer engineering student studying at Thakur college of engineering and technology.",
         instagram: 'https://instagram.com/vishal_yadav0129?igshid=NGExMmI2YTkyZg==',
