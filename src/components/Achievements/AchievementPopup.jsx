@@ -11,7 +11,7 @@ export default function AchievementPopup(props) {
         <div className='relative'>
             {
                 popup &&
-                <div className="z-20 w-[38rem] h-[25rem] bg-white absolute top-[9.5px] right-[75.5px] rounded-[5%] border-b-[20px] border-b-[#012970]">
+                <div className="z-20 ss:w-[38rem] ss:h-[25rem] w-[22rem] h-[15rem] bg-white absolute top-[9.5px] ss:left-[-304px] left-[-170px] rounded-t-[9%] rounded-b-[5%] border-b-[20px] border-b-[#012970]">
                     <div className='flex justify-between pt-3 pb-2 bg-[#012970] rounded-t-[1.4rem]'>
                         <img className='bg-white w-[50px] h-[50px] object-contain rounded-[50%] mt-1 ml-4' src={props.imgUrl} alt='profile' />
                         <h1 className='text-2xl text-white font-bold pt-4'>COMP-C Students</h1>
@@ -39,7 +39,7 @@ export default function AchievementPopup(props) {
                     </div>
                 </div>
             }
-            <button onClick={handlePopupClick} className="absolute ss:top-[22px] ss:left-64 top-4 left-[134px] w-8 h-8 rounded-[50%] bg-white text-black font-bold text-[1rem] text-center hover:font-bold hover:scale-[1.1] transition-all duration-300">
+            <button onClick={handlePopupClick} className="absolute ss:top-[22px] ss:left-64 top-4 left-[125px] w-8 h-8 rounded-[50%] bg-white text-black font-bold text-[1rem] text-center hover:font-bold hover:scale-[1.1] transition-all duration-300">
                 i
             </button>
         </div>

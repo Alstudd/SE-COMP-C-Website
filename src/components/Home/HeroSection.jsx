@@ -34,7 +34,7 @@ export default function HeroSection() {
               type: "spring",
               delay: 0.5
             }}
-            className="font-semibold text-4xl leading-[3rem] tracking-[-0.06rem] md:leading-[3.75rem] 2xl:leading-[4.5rem] 2xl:text-6xl md:text-5xl">
+            className="font-bold text-4xl leading-[3rem] tracking-[-0.06rem] md:leading-[3.75rem] 2xl:leading-[4.5rem] 2xl:text-6xl md:text-5xl">
             Discover the Achievements of SE Comp-C Students
           </motion.h1>
           <motion.p

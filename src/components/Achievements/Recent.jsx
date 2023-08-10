@@ -19,7 +19,7 @@ export default function Recent() {
                             
                             <div className='opp-card hover:scale-[1.025] hover:cursor-pointer flex gap-[0.6rem] flex-col justify-center items-center px-[1rem] pb-[1rem] m-auto'>
                                 <AchievementPopup names={card.names} imgUrl={card.imgUrl} />
-                                <a href={card.link} target='_blank'><img className='ss:w-[38rem] ss:h-[25rem] w-[22rem] h-[15rem] rounded-[5%]' src={card.imgUrl} alt="cardImg" /></a>
+                                <a href={card.link} target='_blank'><img className='ss:w-[38rem] ss:h-[25rem] w-[20.5rem] h-[15rem] rounded-[5%]' src={card.imgUrl} alt="cardImg" /></a>
                                 <p className='text-[1.5rem] text-[#012970] text-center font-bold'>{card.title}</p>
                                 <span className='font-bold text-center text-[1.2rem]'>
                                     <span>{card.desc}</span>
@@ -37,7 +37,7 @@ export default function Recent() {
 const SliderButtons = () => {
     const swiper = useSwiper();
     return (
-        <div className='flex justify-center gap-[1rem] pt-4'>
+        <div className='flex justify-center gap-[1rem] pt-0'>
             <button className='text-[1.2rem] py-[0.2rem] px-[0.8rem] text-blue-600 border-none rounded-[5px] bg-blue-100 cursor-pointer' onClick={() => swiper.slidePrev()}>❰</button>
             <button className='text-[1.2rem] py-[0.2rem] px-[0.8rem] text-blue-600 border-none rounded-[5px] bg-blue-100 cursor-pointer' onClick={() => swiper.slideNext()}>❱</button>
         </div>
