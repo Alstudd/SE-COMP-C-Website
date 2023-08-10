@@ -5,7 +5,7 @@ import '../css/animations.css';
 
 export default function Footer() {
   return (
-    <div className='relative'>
+    <div className='relative mt-6'>
     <div className="absolute top-0 w-full bg-[#02044A] text-gray-300 pb-8 pt-14 px-2 rounded-tl-[125px]">
       <div className="max-w-[1240px] mx-auto grid grid-cols-3 md:grid-cols-5 border-b-2 border-gray-600 py-8">
         <div className='ml-5 pt-3'>
@@ -22,9 +22,10 @@ export default function Footer() {
           </h6>
           <ol>
             <p className="py-1">TCET</p>
+            {/* <p className="py-1">Thakur Village</p> */}
             <p className="py-1">Kandivali (E)</p>
             <p className="py-1">Mumbai-101</p>
-            <p className="py-1">Classroom 608</p>
+            <p className="py-1">Class 608</p>
           </ol>
         </div>
         <div className='ml-5 md:ml-0'>
@@ -39,6 +40,7 @@ export default function Footer() {
             <li className="py-1"><a href="/">Home</a></li>
             <li className="py-1"><a href="/achievements">Achievements</a></li>
             <li className="py-1"><a href="/students">Students</a></li>
+            {/* <li className="py-1"><a href="/resources">Resources</a></li> */}
             <li className="py-1"><a href="/contact">Contact</a></li>
           </ol>
         </div>

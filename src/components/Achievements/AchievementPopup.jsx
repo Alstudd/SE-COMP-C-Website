@@ -8,7 +8,7 @@ export default function AchievementPopup(props) {
         setPopup(!popup);
     }
     return (
-        <div>
+        <div className='relative'>
             {
                 popup &&
                 <div className="z-20 w-[38rem] h-[25rem] bg-white absolute top-[9.5px] right-[75.5px] rounded-[5%] border-b-[20px] border-b-[#012970]">
@@ -39,7 +39,7 @@ export default function AchievementPopup(props) {
                     </div>
                 </div>
             }
-            <button onClick={handlePopupClick} className="absolute top-[22px] right-[90px] w-8 h-8 rounded-[50%] bg-white text-black font-bold text-[1rem] text-center hover:font-bold hover:scale-[1.1] transition-all duration-300">
+            <button onClick={handlePopupClick} className="absolute ss:top-[22px] ss:left-64 top-4 left-[134px] w-8 h-8 rounded-[50%] bg-white text-black font-bold text-[1rem] text-center hover:font-bold hover:scale-[1.1] transition-all duration-300">
                 i
             </button>
         </div>

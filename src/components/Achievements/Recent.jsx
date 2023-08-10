@@ -19,9 +19,9 @@ export default function Recent() {
                             
                             <div className='opp-card hover:scale-[1.025] hover:cursor-pointer flex gap-[0.6rem] flex-col justify-center items-center px-[1rem] pb-[1rem] m-auto'>
                                 <AchievementPopup names={card.names} imgUrl={card.imgUrl} />
-                                <a href={card.link} target='_blank'><img className='w-[38rem] h-[25rem] rounded-[5%]' src={card.imgUrl} alt="cardImg" /></a>
-                                <p className='text-[1.5rem] text-[#012970] font-bold'>{card.title}</p>
-                                <span className='font-bold text-[1.2rem]'>
+                                <a href={card.link} target='_blank'><img className='ss:w-[38rem] ss:h-[25rem] w-[22rem] h-[15rem] rounded-[5%]' src={card.imgUrl} alt="cardImg" /></a>
+                                <p className='text-[1.5rem] text-[#012970] text-center font-bold'>{card.title}</p>
+                                <span className='font-bold text-center text-[1.2rem]'>
                                     <span>{card.desc}</span>
                                 </span>
                                 {/* <span className='text-[0.9rem] w-[15rem] font-semibold'>{card.names}</span> */}
