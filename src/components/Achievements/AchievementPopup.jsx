@@ -24,8 +24,8 @@ export default function AchievementPopup(props) {
                     <div>
                         <ul className='relative bg-white'>
                             {props.names.map((element, i) => {
-                                return <li className='h-[54px] flex gap-4 items-center liAnimate hover:bg-blue-300 list-none p-[10px] w-full bg-white'>
-                                    <span className="bg-[#012970] h-7 relative px-4 pt-1 text-white inline-block rounded-[30%] text-[12px] font-bold spanAnimate">
+                                return <li className='h-[2.3rem] sm:h-14 flex gap-4 items-center liAnimate hover:bg-blue-300 list-none p-3 w-full bg-white'>
+                                    <span className="bg-[#012970] h-5 sm:h-7 relative px-3 sm:px-4 sm:pt-1 pt-0 text-white inline-block rounded-[30%] text-[12px] font-bold spanAnimate">
                                         {studentDetails.map(student => {
                                             if (student.name === element) {
                                                 return <span className="flex justify-center">{student.rollNo}</span>
