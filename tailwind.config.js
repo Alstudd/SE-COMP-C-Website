@@ -20,6 +20,7 @@ export default {
       xl: "1700px",
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [],
+  // plugins: [require("daisyui")],
 }
 
