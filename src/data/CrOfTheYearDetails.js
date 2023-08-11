@@ -2,7 +2,7 @@ const CrOfTheYearDetails = [
     {
         name: "Khushi Tiwari",
         type: "Academic CR",
-        image: "https://i.imgur.com/wxhsGKX.png"
+        image: "https://i.imgur.com/zrzpTLK.png"
     },
     {
         name: "Vikrant Singh",

@@ -317,10 +317,10 @@ const studentDetails = [
     },
     {
         rollNo: 26,
-        image: 'https://i.imgur.com/wxhsGKX.png',
+        image: 'https://i.imgur.com/zrzpTLK.png',
         name: 'Khushi Tiwari',
         designation: 'Full Stack Web Dev Enthusiast',
-        description: "I am the Academic CR of COMP C. I am an aspiring Full Stack Web Developer. I completed my SSC from St. Joseph's School with 93.60%. I secured 87.83% in HSC. I am a very passionate and disciplined girl. I am a passionate cook and baker.",
+        description: "An avid learner and an ambivert. My hobbies are sketching and baking.",
         instagram: 'https://instagram.com/__khushitiwari____?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D',
         linkedin: 'https://www.linkedin.com/in/khushi-tiwari-a57b08256',
         github: 'https://github.com/khushi123go',
