@@ -454,9 +454,12 @@ const studentDetails = [
         image: 'https://i.imgur.com/fJMikDu.png',
         name: 'Sanskar Varshney',
         designation: 'SE COMPS Student',
-        description: "I'm a boy",
+        description: "Pursuing Computer Enginerring at TCET",
+        instagram: 'https://www.instagram.com/sanskarv83?igsh=MXV2YzFlNDAydzB2Yg==',
+        linkedin: 'https://www.linkedin.com/in/sanskar-varshney-764149302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         sAchievements: [
-            "Clubs: RC-TCET"
+            "Clubs: RC-TCET",
+            "F.E. Pointers: 9.48, 9.62",
         ]
     },
     {
